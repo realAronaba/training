@@ -6,7 +6,6 @@ node {
         ansiblePlaybook(
             playbook: 'ping.yml',
             inventory: 'inventory.ini',
-            credentialsId: 'ansible_jenkins',
-            colorized: true)
+            credentialsId: 'ansible_jenkins')
     }
 }
