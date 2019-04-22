@@ -1,2 +1,2 @@
 # training
-For Training and Jenkins Pipeline
+For Training Ansible Playbooks and Jenkins Pipeline
