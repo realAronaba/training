@@ -6,7 +6,7 @@ node {
    stage('Running the playbooks')
     {
         ansiblePlaybook(
-            playbook: 'uninstall_apache.yml',
+            playbook: 'webserver.yml',
             inventory: 'inventory.ini',
             credentialsId: 'ansible_jenkins')
          }
