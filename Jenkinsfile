@@ -1,7 +1,7 @@
 node {
   
         ansiblePlaybook(
-            playbook: 'training/ping.yml',
-            inventory: 'taining/inventory.ini',
+            playbook: 'ping.yml',
+            inventory: 'inventory.ini',
             credentialsId: 'ansible_jenkins')
 }
