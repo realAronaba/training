@@ -1,7 +1,7 @@
 node {
   
         ansiblePlaybook(
-            playbook: 'ping.yml',
-            inventory: 'inventory.ini',
+            playbook: 'training/ping.yml',
+            inventory: 'taining/inventory.ini',
             credentialsId: 'ansadmin_sshkey')
 }
