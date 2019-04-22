@@ -6,3 +6,5 @@
       apt: name={{ item }} state=present
       with_items:
         - apache2
+    - name: start apache2 server
+      service: name=apache2 state=started
