@@ -4,6 +4,7 @@
   vars_files:
     - ../group_vars/webservers.yml
     - ../hosts_vars/front1.yml
+    - ../group_vars/all.yml
   tasks:
     - name: Install packages
       apt: name={{ item }} state=present
@@ -14,4 +15,4 @@
     - name: copy index for remote server
       copy: src={{ source }}/index.html dest={{ destination }}
     - name: restart server 
-      service: name=apache2 state=restarted
+      service: name=apache2 state={{ restart_service }}
