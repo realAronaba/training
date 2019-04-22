@@ -1,1 +1,3 @@
 directory: /home/docker
+source: ../sourcesfiles
+destination: /var/www/html
