@@ -1,5 +1,3 @@
-stage 'Checking connectivity'
-
 node {
     deleteDir()
     checkout scm
