@@ -6,8 +6,8 @@ node {
    stage('Running the playbooks')
     {
         ansiblePlaybook(
-            playbook: 'webserver.yml',
-            inventory: 'inventory.ini',
+            playbook: 'playbooks/webserver.yml',
+            inventory: 'inventories/inventory.ini',
             credentialsId: 'ansible_jenkins')
          }
    stage('Delete workspace')
