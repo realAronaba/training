@@ -1,9 +1,17 @@
 node {
-   deleteDir()
-   checkout scm
-  
+   stage('Check The sources files')
+   {
+      checkout scm
+      }
+   stage('Running the playbooks')
+    {
         ansiblePlaybook(
-            playbook: 'ping.yml',
+            playbook: 'webserver.yml',
             inventory: 'inventory.ini',
             credentialsId: 'ansible_jenkins')
+         }
+   stage('Delete workspace')
+        {
+           deleteDir()
+        }
 }
