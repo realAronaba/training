@@ -1,4 +1,6 @@
 node {
+   deleteDir()
+   checkout scm
   
         ansiblePlaybook(
             playbook: 'ping.yml',
